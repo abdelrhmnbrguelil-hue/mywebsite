@@ -1,39 +1,93 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>صفحتي الأولى</title>
-    <style>
-        body {
-            background-color: #eef2f3;
-            font-family: "Tahoma";
-            text-align: center;
-            padding-top: 50px;
-        }
-        h1 {
-            color: #0078d7;
-        }
-        p {
-            color: #333;
-            font-size: 18px;
-        }
-        button {
-            background-color: #0078d7;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
-        button:hover {
-            background-color: #005bb5;
-        }
-    </style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>موقعي الشخصي</title>
 </head>
 <body>
-    <h1>مرحباً بك في موقعي 🌐</h1>
-    <p>أنا أنشأت هذه الصفحة لأول مرة !</p>
-    <button onclick="alert('شكراً على زيارتك!')">اضغط هنا</button>
+  <!-- رأس الصفحة -->
+  <header class="header" id="header">
+    <div class="name-title">
+      <h1>عبد الرحمان</h1>
+      <p>مطور مواقع ويب</p>
+  </header>
+    <div class="links">
+      <a href="#about-section">عنّي</a>
+      <a href="#skills-section">مهاراتي</a>
+      <a href="#project-section">مشاريعي</a>
+      <a href="#contect-footer">التواصل</a>
+    </div>
+     
+      <hr>
+      
+    </div>
+    <br>
+  <!-- عنّي -->
+  <section id="about-section">
+    <div class="about">
+      <h2>عنّي</h2>
+      <p>مرحبًا، أنا عبد الرحمان مطور مواقع ويب مبتدأ انشأت هذا الموقع لإختبار مهاراتي، انشأت هذا الموقع باستخدام لغتي html و css، وقريبا سأتعلم js .</p>
+    </div>
+    
+    <hr>
+    
+  </section>
+  <!-- مهاراتي -->
+  <section id="skills-section">
+    <div class="my-cards">
+    <h2>مهاراتي</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>CSS</h3>
+        <p>التنسيق والجماليات</p>
+      </div>
+      <div class="card">
+        <h3>HTML</h3>
+        <p>هيكلة الصفحة</p>
+      </div>
+      <div class="card">
+        <h3>JS</h3>
+        <p>التفاعل، قريباً</p>
+      </div>
+    </div>
+    </div>
+    <hr>
+  </section>
+  <!-- مشاريعي -->
+  <section id="project-section">
+    <h2 style="text-align: center; magin-top: 40px; color: #1a365d;">مشاريعي</h2>
+    <div class="my-projects">
+      <div class="project">
+        <div class="project-image project-1">
+        <h3>مشروعي الأول</h3>
+        
+        <p>محتواه هو ، التعريف عنّي وعرض بعض مهاراتي ومشاريعي وكيفية التواصل معي.</p>
+        
+        <a href="#header">إنتقل الى مشروعي الأول</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- التواصل -->
+  <footer id="contect-footer">
+    <div class="contect">
+      <h2>التواصل</h2>
+      <h3>تواصل معي عبر</h3>
+      
+      <div class="contect-links">
+        <a href="https://www.facebook.com/profile.php?id=61582532673018" class="contect-btn">facebook</a>
+        <a href="https://www.instagram.com/abdelrhmn_off?igsh=MXAwMWY2YW1nZmU2OQ==" class="contect-btn">instagram</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
